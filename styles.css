@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f2eb;
+    font-family: 'Caveat', cursive;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 350px;
+    min-height: 500px;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    margin: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 700;
+    padding-left: 0;
+}
+
+#dateInput {
+    font-family: 'Caveat', cursive;
+    font-size: 1.2rem;
+    border: none;
+    background: transparent;
+    text-align: right;
+    width: 90px;
+    cursor: default;
+    pointer-events: none;
+    color: black;
+    padding-right: 0;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    margin-top: 1.8rem;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2px 0;
+}
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin: 2px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox.checked {
+    background-color: black;
+    border-color: black;
+}
+
+.task-input {
+    font-family: 'Caveat', cursive;
+    font-size: 1.3rem;
+    border: none;
+    background: transparent;
+    width: 100%;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.task-input:focus {
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+main {
+    flex: 1;
+}
+
+#resetButton {
+    font-family: 'Caveat', cursive;
+    font-size: 1.1rem;
+    background: transparent;
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: auto;
+    align-self: center;
+    transition: all 0.2s;
+    margin-bottom: 1rem;
+}
+
+#resetButton:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
