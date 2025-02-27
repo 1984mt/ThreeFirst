@@ -116,8 +116,14 @@ main {
     align-self: center;
     transition: all 0.2s;
     margin-bottom: 1rem;
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: inherit;
 }
 
-#resetButton:hover {
+#resetButton:active {
     background: rgba(0, 0, 0, 0.1);
+    color: inherit;
 }
